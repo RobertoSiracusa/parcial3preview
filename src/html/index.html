@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control de Proyectos - Dashboard</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="/js/Personal.js"></script>
     <script src="/js/Tarea.js"></script>
@@ -17,7 +17,7 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="logo" onclick="toggleSidebar()" style="cursor: pointer;">
-                    <img src="../storage/vectors/browser-svgrepo-com.svg" alt="Logo" class="logo-icon">
+                    <img src="/storage/vectors/browser-svgrepo-com.svg" alt="Logo" class="logo-icon">
                     <span class="logo-text">Panel de Control</span>
                 </div>
             </div>
@@ -26,31 +26,31 @@
                 <ul class="nav-list">
                     <li class="nav-item active">
                         <a href="#" class="nav-link">
-                            <img src="../storage/vectors/home-svgrepo-com.svg" alt="Inicio" class="nav-icon">
+                            <img src="/storage/vectors/home-svgrepo-com.svg" alt="Inicio" class="nav-icon">
                             <span class="nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="empleados.html" class="nav-link">
-                            <img src="../storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="nav-icon">
+                            <img src="/storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="nav-icon">
                             <span class="nav-text">Empleados</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="materiales.html" class="nav-link">
-                            <img src="../storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="nav-icon">
+                            <img src="/storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="nav-icon">
                             <span class="nav-text">Materiales</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="otros-gastos.html" class="nav-link">
-                            <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="Otros Gastos" class="nav-icon">
+                            <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="Otros Gastos" class="nav-icon">
                             <span class="nav-text">Otros Gastos</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="tareas.html" class="nav-link">
-                            <img src="../storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="nav-icon">
+                            <img src="/storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="nav-icon">
                             <span class="nav-text">Tareas</span>
                         </a>
                     </li>
@@ -112,7 +112,7 @@
                       <div class="quick-actions-grid">
                           <a href="empleados.html" class="quick-action-card">
                               <div class="action-icon">
-                                  <img src="../storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="action-icon-img">
+                                  <img src="/storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="action-icon-img">
                               </div>
                               <h3>Gestionar Empleados</h3>
                               <p>Crear, editar y administrar empleados del proyecto</p>
@@ -120,7 +120,7 @@
                           
                           <a href="materiales.html" class="quick-action-card">
                               <div class="action-icon">
-                                  <img src="../storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="action-icon-img">
+                                  <img src="/storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="action-icon-img">
                               </div>
                               <h3>Gestionar Materiales</h3>
                               <p>Administrar inventario y costos de materiales</p>
@@ -128,7 +128,7 @@
                           
                           <a href="tareas.html" class="quick-action-card">
                               <div class="action-icon">
-                                  <img src="../storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="action-icon-img">
+                                  <img src="/storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="action-icon-img">
                               </div>
                               <h3>Gestionar Tareas</h3>
                               <p>Organizar y asignar tareas del proyecto</p>
@@ -136,7 +136,7 @@
                           
                           <a href="otros-gastos.html" class="quick-action-card">
                               <div class="action-icon">
-                                  <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="Gastos" class="action-icon-img">
+                                  <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="Gastos" class="action-icon-img">
                               </div>
                               <h3>Otros Gastos</h3>
                               <p>Registrar gastos adicionales del proyecto</p>
@@ -247,11 +247,11 @@
                      <!-- Botones de acción del dashboard -->
                      <div class="dashboard-actions">
                          <button onclick="actualizarDashboardManual()" id="btnActualizarDashboard">
-                             <img src="../storage/vectors/browser-svgrepo-com.svg" alt="Actualizar" class="button-icon">
+                             <img src="/storage/vectors/browser-svgrepo-com.svg" alt="Actualizar" class="button-icon">
                              Actualizar Dashboard
                          </button>
                          <button onclick="eliminarDatosProyecto()" id="btnEliminarDatos" class="btn-danger">
-                             <img src="../storage/vectors/trash-svgrepo-com.svg" alt="Eliminar" class="button-icon">
+                             <img src="/storage/vectors/trash-svgrepo-com.svg" alt="Eliminar" class="button-icon">
                              Eliminar Datos del Proyecto
                          </button>
                      </div>
@@ -266,14 +266,14 @@
 
                     
     <!-- Script principal del dashboard -->
-    <script src="../js/index.js"></script>
+    <script src="/js/index.js"></script>
 
     <!-- Modal de confirmación para eliminar datos del proyecto -->
     <div id="modalEliminarDatosProyecto" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/trash-svgrepo-com.svg" alt="Eliminar" class="modal-title-icon">
+                    <img src="/storage/vectors/trash-svgrepo-com.svg" alt="Eliminar" class="modal-title-icon">
                     Eliminar Datos del Proyecto
                 </h2>
                 <span class="modal-close" onclick="cerrarModalEliminarDatos()">&times;</span>
@@ -281,7 +281,7 @@
             <div class="modal-body">
                 <div class="confirmacion-mensaje">
                     <div class="confirmacion-icon">
-                        <img src="../storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="Advertencia">
+                        <img src="/storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="Advertencia">
                     </div>
                     <div class="confirmacion-texto">
                         <p><strong>¿Estás seguro de que quieres eliminar todos los datos del proyecto?</strong></p>
@@ -299,11 +299,11 @@
             <div class="modal-footer">
                 <div class="buttons-section">
                     <button class="button button-info" onclick="cerrarModalEliminarDatos()">
-                        <img src="../storage/vectors/align-right-svgrepo-com.svg" alt="Cancelar" class="button-icon">
+                        <img src="/storage/vectors/align-right-svgrepo-com.svg" alt="Cancelar" class="button-icon">
                         Cancelar
                     </button>
                     <button class="button button-danger" onclick="confirmarEliminarDatos()">
-                        <img src="../storage/vectors/trash-svgrepo-com.svg" alt="Eliminar" class="button-icon">
+                        <img src="/storage/vectors/trash-svgrepo-com.svg" alt="Eliminar" class="button-icon">
                         Eliminar Todo
                     </button>
                 </div>

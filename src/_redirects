@@ -1,0 +1,12 @@
+# Redirecciones para el sitio estático
+# Redirigir la raíz al index.html
+/ /html/index.html 200
+
+# Permitir acceso directo a archivos estáticos
+/css/* /css/:splat 200
+/js/* /js/:splat 200
+/storage/* /storage/:splat 200
+/html/* /html/:splat 200
+
+# Para cualquier otra ruta, redirigir al index.html (SPA behavior)
+/* /html/index.html 200

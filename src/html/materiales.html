@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión de Materiales - Panel de Control</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="dashboard-container">
@@ -13,7 +13,7 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="logo" onclick="toggleSidebar()" style="cursor: pointer;">
-                    <img src="../storage/vectors/browser-svgrepo-com.svg" alt="Logo" class="logo-icon">
+                    <img src="/storage/vectors/browser-svgrepo-com.svg" alt="Logo" class="logo-icon">
                     <span class="logo-text">Panel de Control</span>
                 </div>
             </div>
@@ -22,31 +22,31 @@
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">
-                            <img src="../storage/vectors/home-svgrepo-com.svg" alt="Inicio" class="nav-icon">
+                            <img src="/storage/vectors/home-svgrepo-com.svg" alt="Inicio" class="nav-icon">
                             <span class="nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="empleados.html" class="nav-link">
-                            <img src="../storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="nav-icon">
+                            <img src="/storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="nav-icon">
                             <span class="nav-text">Empleados</span>
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a href="materiales.html" class="nav-link">
-                            <img src="../storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="nav-icon">
+                            <img src="/storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="nav-icon">
                             <span class="nav-text">Materiales</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="otros-gastos.html" class="nav-link">
-                            <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="Otros Gastos" class="nav-icon">
+                            <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="Otros Gastos" class="nav-icon">
                             <span class="nav-text">Otros Gastos</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="tareas.html" class="nav-link">
-                            <img src="../storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="nav-icon">
+                            <img src="/storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="nav-icon">
                             <span class="nav-text">Tareas</span>
                         </a>
                     </li>
@@ -55,7 +55,7 @@
             
             <div class="sidebar-footer">
                 <button onclick="abrirModalConfiguracion()" class="nav-link settings-link">
-                    <img src="../storage/vectors/settings-svgrepo-com.svg" alt="Configuración" class="nav-icon">
+                    <img src="/storage/vectors/settings-svgrepo-com.svg" alt="Configuración" class="nav-icon">
                     <span class="nav-text">Configuración</span>
                 </button>
             </div>
@@ -78,12 +78,12 @@
                 <div class="action-buttons-section">
                     <div class="buttons-section">
                         <button onclick="crearMaterialPersonalizado()" class="button button-success">
-                            <img src="../storage/vectors/layers-svgrepo-com.svg" alt="" class="button-icon">
+                            <img src="/storage/vectors/layers-svgrepo-com.svg" alt="" class="button-icon">
                             Crear Material Nuevo
                         </button>
                         
                         <button onclick="limpiarListaMateriales()" class="button button-warning">
-                            <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
+                            <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
                             Limpiar Lista
                         </button>
                     </div>
@@ -101,7 +101,7 @@
                 <div class="employees-section">
                     <div class="section-header-employees">
                         <h2 class="section-title">
-                            <img src="../storage/vectors/layers-svgrepo-com.svg" alt="" class="layers-icon-large">
+                            <img src="/storage/vectors/layers-svgrepo-com.svg" alt="" class="layers-icon-large">
                             Lista de Materiales (<span id="contadorMateriales">0</span>)
                         </h2>
                     </div>
@@ -119,7 +119,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/layers-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/layers-svgrepo-com.svg" alt="" class="modal-title-icon">
                     Crear Nuevo Material
                 </h2>
                 <button onclick="cerrarModalCrearMaterial()" class="modal-close">×</button>
@@ -128,7 +128,7 @@
             <div class="modal-body">
                 <div class="config-panel">
                     <h3>
-                        <img src="../storage/vectors/portrait-user-svgrepo-com.svg" alt="" class="portrait-user-icon-large">
+                        <img src="/storage/vectors/portrait-user-svgrepo-com.svg" alt="" class="portrait-user-icon-large">
                         Información del Material
                     </h3>
                     <p>Complete todos los campos para crear el material:</p>
@@ -136,7 +136,7 @@
                     <div class="config-grid">
                         <div class="input-group">
                             <label for="nombreMaterial">
-                                <img src="../storage/vectors/layers-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/layers-svgrepo-com.svg" alt="" class="input-icon">
                                 Nombre del Material:
                             </label>
                             <input type="text" id="nombreMaterial" placeholder="Ej: Cemento Portland">
@@ -145,7 +145,7 @@
                         
                         <div class="input-group">
                             <label for="costoPorUnidad">
-                                <img src="../storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
                                 Costo por Unidad ($):
                             </label>
                             <input type="number" id="costoPorUnidad" step="0.01" min="0" placeholder="Ej: 15.75">
@@ -155,7 +155,7 @@
                     
                     <div class="info-note">
                         <strong>
-                            <img src="../storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
+                            <img src="/storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
                             Información:
                         </strong><br>
                         • <strong>Inventario inicial:</strong> Comenzará automáticamente en 0 unidades<br>
@@ -168,15 +168,15 @@
             
             <div class="modal-footer">
                 <button onclick="validarYCrearMaterial()" class="button button-success">
-                    <img src="../storage/vectors/circle-check-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/circle-check-svgrepo-com.svg" alt="" class="button-icon">
                     Crear Material
                 </button>
                 <button onclick="limpiarFormularioMaterial()" class="button button-info">
-                    <img src="../storage/vectors/refresh-ccw-clock-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/refresh-ccw-clock-svgrepo-com.svg" alt="" class="button-icon">
                     Limpiar Campos
                 </button>
                 <button onclick="cerrarModalCrearMaterial()" class="button button-danger">
-                    <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
                     Cancelar
                 </button>
             </div>
@@ -188,7 +188,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="" class="modal-title-icon">
                     Gestionar Inventario
                 </h2>
                 <button onclick="cerrarModalGestionarInventario()" class="modal-close">×</button>
@@ -197,7 +197,7 @@
             <div class="modal-body">
                 <div class="config-panel">
                     <h3>
-                        <img src="../storage/vectors/layers-svgrepo-com.svg" alt="" class="config-icon">
+                        <img src="/storage/vectors/layers-svgrepo-com.svg" alt="" class="config-icon">
                         Información del Material
                     </h3>
                     <div id="infoMaterialInventario" class="material-info">
@@ -207,7 +207,7 @@
                     <div class="config-grid">
                         <div class="input-group">
                             <label for="cantidadInventario">
-                                <img src="../storage/vectors/calculator-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/calculator-svgrepo-com.svg" alt="" class="input-icon">
                                 Cantidad:
                             </label>
                             <input type="number" id="cantidadInventario" step="0.01" min="0" placeholder="Ej: 10">
@@ -216,7 +216,7 @@
                         
                         <div class="input-group">
                             <label for="accionInventario">
-                                <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="" class="input-icon">
                                 Acción:
                             </label>
                             <select id="accionInventario" class="form-select">
@@ -229,7 +229,7 @@
                     
                     <div class="info-note">
                         <strong>
-                            <img src="../storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
+                            <img src="/storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
                             Instrucciones:
                         </strong><br>
                         • <strong>Cantidad:</strong> Ingrese solo números positivos (ej: 10)<br>
@@ -242,15 +242,15 @@
             
             <div class="modal-footer">
                 <button onclick="aplicarCambioInventario()" class="button button-success">
-                    <img src="../storage/vectors/circle-check-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/circle-check-svgrepo-com.svg" alt="" class="button-icon">
                     Aplicar Cambio
                 </button>
                 <button onclick="limpiarFormularioInventario()" class="button button-info">
-                    <img src="../storage/vectors/refresh-ccw-clock-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/refresh-ccw-clock-svgrepo-com.svg" alt="" class="button-icon">
                     Limpiar Campo
                 </button>
                 <button onclick="cerrarModalGestionarInventario()" class="button button-danger">
-                    <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
                     Cancelar
                 </button>
             </div>
@@ -262,21 +262,21 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="modal-title-icon">
                     No se puede eliminar
                 </h2>
                 <button onclick="cerrarModalAdvertenciaMaterialEnTareas()" class="modal-close">×</button>
             </div>
             <div class="modal-body">
                 <div class="confirmacion-mensaje">
-                    <img src="../storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
+                    <img src="/storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
                     <p id="mensajeAdvertenciaMaterialEnTareas">Este material no se puede eliminar porque está asignado a tareas activas.</p>
                 </div>
             </div>
             <div class="modal-footer">
                 <div class="buttons-section">
                     <button onclick="cerrarModalAdvertenciaMaterialEnTareas()" class="button button-info">
-                        <img src="../storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
+                        <img src="/storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
                         Entendido
                     </button>
                 </div>
@@ -289,25 +289,25 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="modal-title-icon">
                     Confirmar Eliminación
                 </h2>
                 <button onclick="cerrarModalConfirmacionEliminarMaterial()" class="modal-close">×</button>
             </div>
             <div class="modal-body">
                 <div class="confirmacion-mensaje">
-                    <img src="../storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
+                    <img src="/storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
                     <p id="mensajeConfirmacionEliminarMaterial">¿Está seguro de que desea eliminar este material?</p>
                 </div>
             </div>
             <div class="modal-footer">
                 <div class="buttons-section">
                     <button onclick="confirmarEliminacionMaterial()" class="button button-danger">
-                        <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
+                        <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
                         Sí, Eliminar
                     </button>
                     <button onclick="cerrarModalConfirmacionEliminarMaterial()" class="button button-info">
-                        <img src="../storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
+                        <img src="/storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
                         Cancelar
                     </button>
                 </div>
@@ -320,7 +320,7 @@
         <div class="modal-content config-modal">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/settings-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/settings-svgrepo-com.svg" alt="" class="modal-title-icon">
                     Configuración Global del Sistema
                 </h2>
                 <button onclick="cerrarModalConfiguracion()" class="modal-close">×</button>
@@ -329,14 +329,14 @@
             <div class="modal-body config-content">
                 <div class="config-panel">
                     <h2>
-                        <img src="../storage/vectors/lock-hashtag-svgrepo-com.svg" alt="" class="config-icon">
+                        <img src="/storage/vectors/lock-hashtag-svgrepo-com.svg" alt="" class="config-icon">
                         Configuración de Seguridad
                     </h2>
                     
                     <div class="config-grid">
                         <div class="input-group">
                             <label for="maximoCosteMaterial">
-                                <img src="../storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
                                 Máximo Coste de Material ($):
                             </label>
                             <input type="number" id="maximoCosteMaterial" value="1000" step="0.01" min="1">
@@ -346,15 +346,15 @@
                     
                     <div class="info-note">
                         <strong>
-                            <img src="../storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
+                            <img src="/storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
                             Nota:
                         </strong> Este valor se aplicará como límite máximo en la validación de costes de materiales.<br>
-                        <strong><img src="../storage/vectors/check-double-svgrepo-com.svg" alt="" class="info-icon"> Validación:</strong> Los materiales no podrán tener un coste por unidad superior a este valor<br>
-                        <strong><img src="../storage/vectors/lightbulb-alt-svgrepo-com.svg" alt="" class="info-icon"> Aplicación:</strong> Los cambios se aplicarán inmediatamente en la creación de materiales
+                        <strong><img src="/storage/vectors/check-double-svgrepo-com.svg" alt="" class="info-icon"> Validación:</strong> Los materiales no podrán tener un coste por unidad superior a este valor<br>
+                        <strong><img src="/storage/vectors/lightbulb-alt-svgrepo-com.svg" alt="" class="info-icon"> Aplicación:</strong> Los cambios se aplicarán inmediatamente en la creación de materiales
                     </div>
                     
                     <button onclick="aplicarConfiguracionMaximoCoste()" class="button button-success">
-                        <img src="../storage/vectors/floppy-disk-svgrepo-com.svg" alt="" class="button-icon">
+                        <img src="/storage/vectors/floppy-disk-svgrepo-com.svg" alt="" class="button-icon">
                         Aplicar Configuración
                     </button>
                 </div>
@@ -362,10 +362,10 @@
         </div>
     </div>
     
-    <script src="../js/Personal.js"></script>
-    <script src="../js/Material.js"></script>
-    <script src="../js/OtrosCostos.js"></script>
-    <script src="../js/materiales.js"></script>
+    <script src="/js/Personal.js"></script>
+    <script src="/js/Material.js"></script>
+    <script src="/js/OtrosCostos.js"></script>
+    <script src="/js/materiales.js"></script>
     
     <script>
         // Función para alternar el estado del sidebar

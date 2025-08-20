@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <div class="dashboard-container">
@@ -15,7 +15,7 @@
         <aside class="sidebar">
             <div class="sidebar-header">
                 <div class="logo" onclick="toggleSidebar()" style="cursor: pointer;">
-                    <img src="../storage/vectors/browser-svgrepo-com.svg" alt="Logo" class="logo-icon">
+                    <img src="/storage/vectors/browser-svgrepo-com.svg" alt="Logo" class="logo-icon">
                     <span class="logo-text">Panel de Control</span>
                 </div>
             </div>
@@ -23,31 +23,31 @@
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">
-                            <img src="../storage/vectors/home-svgrepo-com.svg" alt="Inicio" class="nav-icon">
+                            <img src="/storage/vectors/home-svgrepo-com.svg" alt="Inicio" class="nav-icon">
                             <span class="nav-text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="empleados.html" class="nav-link">
-                            <img src="../storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="nav-icon">
+                            <img src="/storage/vectors/user-svgrepo-com.svg" alt="Empleados" class="nav-icon">
                             <span class="nav-text">Empleados</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="materiales.html" class="nav-link">
-                            <img src="../storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="nav-icon">
+                            <img src="/storage/vectors/layers-svgrepo-com.svg" alt="Materiales" class="nav-icon">
                             <span class="nav-text">Materiales</span>
                         </a>
                     </li>
                     <li class="nav-item active">
                         <a href="otros-gastos.html" class="nav-link">
-                            <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="Otros Gastos" class="nav-icon">
+                            <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="Otros Gastos" class="nav-icon">
                             <span class="nav-text">Otros Gastos</span>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="tareas.html" class="nav-link">
-                            <img src="../storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="nav-icon">
+                            <img src="/storage/vectors/clipboard-svgrepo-com.svg" alt="Tareas" class="nav-icon">
                             <span class="nav-text">Tareas</span>
                         </a>
                     </li>
@@ -55,7 +55,7 @@
             </nav>
             <div class="sidebar-footer">
                 <button onclick="abrirModalConfiguracion()" class="nav-link settings-link">
-                    <img src="../storage/vectors/settings-svgrepo-com.svg" alt="Configuración" class="nav-icon">
+                    <img src="/storage/vectors/settings-svgrepo-com.svg" alt="Configuración" class="nav-icon">
                     <span class="nav-text">Configuración</span>
                 </button>
             </div>
@@ -78,12 +78,12 @@
                 <div class="action-buttons-section">
                     <div class="buttons-section">
                         <button onclick="crearOtroGastoPersonalizado()" class="button button-success">
-                            <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="" class="button-icon">
+                            <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="" class="button-icon">
                             Crear Otro Gasto
                         </button>
                         
                         <button onclick="limpiarListaOtrosGastos()" class="button button-warning">
-                            <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
+                            <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
                             Limpiar Lista
                         </button>
                     </div>
@@ -101,7 +101,7 @@
                 <div class="employees-section">
                     <div class="section-header-employees">
                         <h2 class="section-title">
-                            <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="" class="briefcase-icon-large">
+                            <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="" class="briefcase-icon-large">
                             Lista de Otros Gastos (<span id="contadorOtrosGastos">0</span>)
                         </h2>
                     </div>
@@ -119,7 +119,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="" class="modal-title-icon">
                     Crear Nuevo Otro Gasto
                 </h2>
                 <button onclick="cerrarModalCrearOtroGasto()" class="modal-close">×</button>
@@ -128,7 +128,7 @@
             <div class="modal-body">
                 <div class="config-panel">
                     <h3>
-                        <img src="../storage/vectors/portrait-user-svgrepo-com.svg" alt="" class="portrait-user-icon-large">
+                        <img src="/storage/vectors/portrait-user-svgrepo-com.svg" alt="" class="portrait-user-icon-large">
                         Información de Gasto
                     </h3>
                     <p>Complete todos los campos para crear el otro gasto:</p>
@@ -136,7 +136,7 @@
                     <div class="config-grid">
                         <div class="input-group">
                             <label for="nombreOtroGasto">
-                                <img src="../storage/vectors/briefcase-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/briefcase-svgrepo-com.svg" alt="" class="input-icon">
                                 Nombre del Gasto:
                             </label>
                             <input type="text" id="nombreOtroGasto" placeholder="Ej: Servicios públicos">
@@ -145,7 +145,7 @@
                         
                         <div class="input-group">
                             <label for="costoPorUnidadOtroGasto">
-                                <img src="../storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
                                 Costo por Unidad ($):
                             </label>
                             <input type="number" id="costoPorUnidadOtroGasto" step="0.01" min="0" placeholder="Ej: 25.00">
@@ -156,7 +156,7 @@
                     
                     <div class="input-group full-width">
                         <label for="descripcionOtroGasto">
-                            <img src="../storage/vectors/align-right-svgrepo-com.svg" alt="" class="input-icon">
+                            <img src="/storage/vectors/align-right-svgrepo-com.svg" alt="" class="input-icon">
                             Descripción (opcional):
                         </label>
                         <textarea id="descripcionOtroGasto" placeholder="Ej: Servicios de internet mensuales" maxlength="80" rows="3"></textarea>
@@ -166,7 +166,7 @@
                     
                     <div class="info-note">
                         <strong>
-                            <img src="../storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
+                            <img src="/storage/vectors/traffic-light-svgrepo-com.svg" alt="" class="info-icon">
                             Información:
                         </strong><br>
                         • <strong>Tipo de gasto:</strong> Gastos generales del proyecto<br>
@@ -179,15 +179,15 @@
             
             <div class="modal-footer">
                 <button onclick="validarYCrearOtroGasto()" class="button button-success">
-                    <img src="../storage/vectors/circle-check-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/circle-check-svgrepo-com.svg" alt="" class="button-icon">
                     Crear Otro Gasto
                 </button>
                 <button onclick="limpiarFormularioOtroGasto()" class="button button-info">
-                    <img src="../storage/vectors/refresh-ccw-clock-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/refresh-ccw-clock-svgrepo-com.svg" alt="" class="button-icon">
                     Limpiar Campos
                 </button>
                 <button onclick="cerrarModalCrearOtroGasto()" class="button button-danger">
-                    <img src="../storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
+                    <img src="/storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
                     Cancelar
                 </button>
             </div>
@@ -201,7 +201,7 @@
         <div class="modal-content config-modal">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/settings-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/settings-svgrepo-com.svg" alt="" class="modal-title-icon">
                     Configuración Global del Sistema
                 </h2>
                 <button onclick="cerrarModalConfiguracion()" class="modal-close">×</button>
@@ -210,7 +210,7 @@
             <div class="modal-body">
                 <div class="config-panel">
                     <h2>
-                        <img src="../storage/vectors/equalizer-svgrepo-com.svg" alt="" class="config-icon">
+                        <img src="/storage/vectors/equalizer-svgrepo-com.svg" alt="" class="config-icon">
                         Configuración de Rangos
                     </h2>
                     <p>Establece los rangos de validación para los diferentes tipos de costos:</p>
@@ -218,7 +218,7 @@
                     <div class="config-grid">
                         <div class="input-group">
                             <label for="costoOtrosGastosMin">
-                                <img src="../storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
                                 Otros Gastos - Mínimo ($):
                             </label>
                             <input type="number" id="costoOtrosGastosMin" step="0.01" min="0" value="1" oninput="validarRangoConfiguracion()">
@@ -226,7 +226,7 @@
                         
                         <div class="input-group">
                             <label for="costoOtrosGastosMax">
-                                <img src="../storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
+                                <img src="/storage/vectors/cash-register-svgrepo-com.svg" alt="" class="input-icon">
                                 Otros Gastos - Máximo ($):
                             </label>
                             <input type="number" id="costoOtrosGastosMax" step="0.01" min="0" value="500" oninput="validarRangoConfiguracion()">
@@ -242,7 +242,7 @@
                     
                     <div class="buttons-section">
                         <button onclick="aplicarConfiguracionRangosOtrosGastos()" class="button button-success">
-                            <img src="../storage/vectors/floppy-disk-svgrepo-com.svg" alt="" class="button-icon">
+                            <img src="/storage/vectors/floppy-disk-svgrepo-com.svg" alt="" class="button-icon">
                             Aplicar Configuración
                         </button>
                     </div>
@@ -258,25 +258,25 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="modal-title-icon">
                     Confirmar Eliminación
                 </h2>
                 <button onclick="cerrarModalConfirmacionEliminarOtroGasto()" class="modal-close">×</button>
             </div>
             <div class="modal-body">
                 <div class="confirmacion-mensaje">
-                    <img src="../storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
+                    <img src="/storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
                     <p id="mensajeConfirmacionEliminarOtroGasto">¿Está seguro de que desea eliminar este otro gasto?</p>
                 </div>
             </div>
             <div class="modal-footer">
                 <div class="buttons-section">
                     <button onclick="confirmarEliminarOtroGasto()" class="button button-danger">
-                        <img src="../storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
+                        <img src="/storage/vectors/trash-svgrepo-com.svg" alt="" class="button-icon">
                         Sí, Eliminar
                     </button>
                     <button onclick="cerrarModalConfirmacionEliminarOtroGasto()" class="button button-info">
-                        <img src="../storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
+                        <img src="/storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
                         Cancelar
                     </button>
                 </div>
@@ -289,21 +289,21 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h2 class="modal-title">
-                    <img src="../storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="modal-title-icon">
+                    <img src="/storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="modal-title-icon">
                     No se puede eliminar
                 </h2>
                 <button onclick="cerrarModalAdvertenciaOtroGastoEnTareas()" class="modal-close">×</button>
             </div>
             <div class="modal-body">
                 <div class="confirmacion-mensaje">
-                    <img src="../storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
+                    <img src="/storage/vectors/alarm-exclamation-svgrepo-com.svg" alt="" class="confirmacion-icon">
                     <p id="mensajeAdvertenciaOtroGastoEnTareas">Este gasto no se puede eliminar porque está asignado a tareas activas.</p>
                 </div>
             </div>
             <div class="modal-footer">
                 <div class="buttons-section">
                     <button onclick="cerrarModalAdvertenciaOtroGastoEnTareas()" class="button button-info">
-                        <img src="../storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
+                        <img src="/storage/vectors/ban-svgrepo-com.svg" alt="" class="button-icon">
                         Entendido
                     </button>
                 </div>
@@ -312,10 +312,10 @@
     </div>
 
     <!-- Scripts -->
-    <script src="../js/Personal.js"></script>
-    <script src="../js/OtrosCostos.js"></script>
-    <script src="../js/OtrosGastos.js"></script>
-    <script src="../js/otros-gastos.js"></script>
+    <script src="/js/Personal.js"></script>
+    <script src="/js/OtrosCostos.js"></script>
+    <script src="/js/OtrosGastos.js"></script>
+    <script src="/js/otros-gastos.js"></script>
     
     <script>
         // Función para alternar el estado del sidebar
